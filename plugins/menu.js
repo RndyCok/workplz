@@ -200,6 +200,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         title: '𝐥𝐢𝐬𝐭 𝐦𝐞𝐧𝐮',
         rows: [
           { title: 'Allmenu', rowId: `${_p}? all` },
+          { title: 'infoalpi', rowId: `${_p}? infoalpi` },
+          { title: 'infojarot', rowId: `${_p}? infojarot` },
           { title: 'Game', rowId: `${_p}? game` },
           { title: 'XP', rowId: `${_p}? xp` },
           { title: 'Stiker', rowId: `${_p}? stiker` },
@@ -226,7 +228,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     ]
     const listMessage = {
       text: judul,
-      footer: -,
+      footer: wm,
       mentions: await conn.parseMention(judul),
       title: '',
       buttonText: "Klik Disini",
